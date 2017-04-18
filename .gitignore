@@ -1,0 +1,19 @@
+# project
+.nyc_output
+.todo
+code.asm
+hydrogen.cfg
+coverage/
+dist/
+
+# node
+node_modules/
+npm-debug.log
+
+# OS
+.DS_Store
+Desktop.ini
+._*
+Thumbs.db
+.Spotlight-V100
+.Trashes
