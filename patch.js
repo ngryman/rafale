@@ -16,7 +16,6 @@ import {
 function patchPrimitiveMorph(newNode, oldNode) {
   const element = document.createTextNode(newNode.data.value)
   newNode.element = oldNode.element.parentNode.replaceChild(element, oldNode.element)
-  newNode.slot = oldNode.slot
   return 1
 }
 
@@ -28,7 +27,6 @@ function patchPrimitiveUpdate(newNode, oldNode) {
     oldNode.element.nodeValue = newNode.data.value
   }
   newNode.element = oldNode.element
-  newNode.slot = oldNode.slot
   return 1
 }
 
