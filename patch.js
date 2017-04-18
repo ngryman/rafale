@@ -1,3 +1,8 @@
+import { inject } from './lib/patching'
+import {
+  SLOT_ATTRIBUTE,
+  SLOT_ELEMENT
+} from './lib/core/slot'
 import {
   PATCH_PRIMITIVE_MORPH,
   PATCH_PRIMITIVE_UPDATE,
@@ -10,22 +15,31 @@ import {
 
 // TODO: do patching in diffing -> morphing?
 
-function patchSequenceAdd(patch) {
-  const node = patch.newNode
-  const { fragment, slots } = node.component
-  const newElement = fragment.cloneNode(true)
-  reconciliate(newElement, node, slots)
-  
-  const parentElement = node.parent.instance.element
-  parentElement.appendChild(newElement)
+function patchPrimitiveUpdate(newNode, oldNode) {
+  if (SLOT_ATTRIBUTE === oldNode.slot) {
+    oldNode.element.setAttribute(oldNode.slot.name, newNode.data.value)
+  }
+  else {
+    oldNode.element.nodeValue = newNode.data.value
+  }
+  newNode.element = oldNode.element
+}
+
+function patchSequenceAdd(newNode, oldNode) {
+  const element = oldNode.children[0].element
+  inject(newNode, element, true)
 }
 
 export default function patch(patches) {
   for (let i = 0, length = patches.length; i < length; i++) {
     const patch = patches[i]
-    
-    if (PATCH_SEQUENCE_ADD === patch.operation) {
-      patchSequenceAdd(patch)
+    const { newNode, oldNode } = patch
+
+    if (PATCH_PRIMITIVE_UPDATE === patch.operation) {
+      patchPrimitiveUpdate(newNode, oldNode)
+    }
+    else if (PATCH_SEQUENCE_ADD === patch.operation) {
+      patchSequenceAdd(newNode, oldNode)
     }
   }
 }

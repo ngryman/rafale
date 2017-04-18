@@ -1,7 +1,7 @@
-const html = require('./html')
-const mount = require('./mount')
-const diff = require('./diff')
-const patch = require('./patch')
+import html from './html'
+import diff from './diff'
+import patch from './patch'
+import { inject } from './lib/patching'
 
 const state = {
   title: 'Hello World!',
@@ -25,26 +25,28 @@ const render = (state) => html`
   </main>
 `
 
+console.profile('inject')
+const oldRoot = render(state)
+inject(oldRoot, document.body.firstChild, true)
+console.profileEnd('inject')
+
+state.links[0] = { label: 'Sweet Home!', href: '/home' }
 state.links.push({ label: 'LoL', href: 'http://leagueoflegends.com' })
 
-const oldRoot = render(state)
-mount(document.body, oldRoot)
-
-// // state.links[0] = { label: 'Sweet Home!', href: '/home' }
-// state.links.push({ label: 'LoL', href: 'http://leagueoflegends.com' })
-// const newRoot = render(state)
-// 
-// const patches = diff(newRoot, oldRoot)
-// patch(patches)
+console.profile('diff/patch')
+const newRoot = render(state)
+const patches = diff(newRoot, oldRoot)
+patch(patches)
+console.profileEnd('diff/patch')
 
 // const oldRoot = render(state)
 // // patch(document.body, oldRoot, null)
-// 
+//
 // state.content = 'Coucou !'
 // state.links[0] = { label: 'Sweet Home!', href: '/home' }
 // state.links.push({ label: 'LoL', href: 'http://leagueoflegends.com' })
 // const newRoot = render(state)
-// 
+//
 // const patches = diff(newRoot, oldRoot)
 // console.log(patches)
 // // patch(document.body, patches)
