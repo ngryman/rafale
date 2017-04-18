@@ -1,5 +1,3 @@
-import hash from 'string-hash'
-
 import { registerComponent } from './lib/core/registry'
 import {
   createPrimitiveVNode,
@@ -9,6 +7,7 @@ import {
 } from './lib/core/vnode'
 
 export default function(parts, ...values) {
+  // TODO: handle splats manually
   const component = registerComponent(parts)
   const node = createVNode(component)
 

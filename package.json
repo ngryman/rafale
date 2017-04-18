@@ -1,4 +1,5 @@
 {
+  "name": "kiff",
   "scripts": {
     "start": "budo index.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
     "start:hyper": "budo hyperapp.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
