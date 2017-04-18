@@ -1,19 +1,24 @@
 import { inject } from './lib/patching'
+import { SLOT_ATTRIBUTE } from './lib/core/slot'
+import { notImplemented } from './lib/core/util'
 import {
-  SLOT_ATTRIBUTE,
-  SLOT_ELEMENT
-} from './lib/core/slot'
-import {
-  PATCH_PRIMITIVE_MORPH,
   PATCH_PRIMITIVE_UPDATE,
-  PATCH_SEQUENCE_MORPH,
+  PATCH_PRIMITIVE_MORPH,
   PATCH_SEQUENCE_ADD,
-  PATCH_SEQUENCE_REMOVE,
   PATCH_SEQUENCE_UPDATE,
+  PATCH_SEQUENCE_REMOVE,
+  PATCH_SEQUENCE_MORPH,
   PATCH_COMPONENT_MORPH
 } from './lib/core/patch'
 
 // TODO: do patching in diffing -> morphing?
+
+function patchPrimitiveMorph(newNode, oldNode) {
+  const element = document.createTextNode(newNode.data.value)
+  newNode.element = oldNode.element.parentNode.replaceChild(element, oldNode.element)
+  newNode.slot = oldNode.slot
+  return 1
+}
 
 function patchPrimitiveUpdate(newNode, oldNode) {
   if (SLOT_ATTRIBUTE === oldNode.slot) {
@@ -23,23 +28,45 @@ function patchPrimitiveUpdate(newNode, oldNode) {
     oldNode.element.nodeValue = newNode.data.value
   }
   newNode.element = oldNode.element
+  newNode.slot = oldNode.slot
+  return 1
 }
 
-function patchSequenceAdd(newNode, oldNode) {
-  const element = oldNode.children[0].element
-  inject(newNode, element, true)
+function patchSequenceAdd(newNode, oldNode, patches, index) {
+  const element = oldNode.element
+  const lastChild = element.lastChild
+
+  for (var i = index, length = patches.length; i < length && PATCH_SEQUENCE_ADD === patches[i].operation; i++) {
+    inject(patches[i].newNode, lastChild, true)
+  }
+
+  return (i - index)
 }
+
+function patchSequenceRemove(oldNode) {
+  oldNode.element.remove()
+  return 1
+}
+
+function patchComponentMorph(newNode, oldNode) {
+  inject(newNode, oldNode.element, false)
+  return 1
+}
+
+const patchers = [
+  patchPrimitiveUpdate, // PATCH_PRIMITIVE_MORPH
+  patchPrimitiveMorph,  // PATCH_PRIMITIVE_MORPH
+  patchSequenceAdd,     // PATCH_SEQUENCE_ADD
+  notImplemented,       // PATCH_SEQUENCE_UPDATE
+  patchSequenceRemove,  // PATCH_SEQUENCE_REMOVE
+  notImplemented,       // PATCH_SEQUENCE_MORPH
+  patchComponentMorph   // PATCH_COMPONENT_MORPH
+]
 
 export default function patch(patches) {
-  for (let i = 0, length = patches.length; i < length; i++) {
+  for (let i = 0, patched = 1, length = patches.length; i < length; i += patched) {
     const patch = patches[i]
     const { newNode, oldNode } = patch
-
-    if (PATCH_PRIMITIVE_UPDATE === patch.operation) {
-      patchPrimitiveUpdate(newNode, oldNode)
-    }
-    else if (PATCH_SEQUENCE_ADD === patch.operation) {
-      patchSequenceAdd(newNode, oldNode)
-    }
+    patched = patchers[patch.operation](newNode, oldNode, patches, i)
   }
 }

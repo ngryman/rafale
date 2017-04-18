@@ -11,11 +11,11 @@ import {
 export default function(parts, ...values) {
   const component = registerComponent(parts)
   const node = createVNode(component)
-  
+
   for (let i = 0; i < values.length; i++) {
     const val = values[i]
     let child
-    
+
     if (isVNode(val)) {
       child = val
     }
@@ -25,9 +25,9 @@ export default function(parts, ...values) {
     else {
       child = createPrimitiveVNode(val)
     }
-    
+
     node.addChild(child)
   }
-  
+
   return node
 }

@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "start": "budo index.js -p3000 --live -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
-    "start:hyperapp": "budo hyperapp.js -p3000 --live -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
+    "start": "budo index.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
   },
   "dependencies": {
     "string-hash": "^1.1.3"
