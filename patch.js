@@ -68,9 +68,11 @@ const patchers = [
 ]
 
 export default function patch(patches) {
-  for (let i = 0, patched = 1, length = patches.length; i < length; i += patched) {
-    const patch = patches[i]
-    const { newNode, oldNode } = patch
-    patched = patchers[patch.operation](newNode, oldNode, patches, i)
-  }
+  requestAnimationFrame(() => {
+    for (let i = 0, patched = 1, length = patches.length; i < length; i += patched) {
+      const patch = patches[i]
+      const { newNode, oldNode } = patch
+      patched = patchers[patch.operation](newNode, oldNode, patches, i)
+    }
+  })
 }

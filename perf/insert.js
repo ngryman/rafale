@@ -35,5 +35,5 @@ setTimeout(() => {
   const vtree2 = render(state)
   const patches = diff(vtree2, vtree)
   patch(patches)
-  console.profileEnd('insert')
+  requestAnimationFrame(() => console.profileEnd('insert'))
 }, 0)

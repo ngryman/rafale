@@ -24,7 +24,7 @@ class Table extends Component {
   }
 
   componentDidUpdate() {
-    setTimeout(() => console.profileEnd('insert preact'), 0)
+    requestAnimationFrame(() => console.profileEnd('insert preact'))
   }
 
   renderItem(item) {
