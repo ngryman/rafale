@@ -32,11 +32,17 @@ function patchPrimitiveUpdate(newNode, oldNode) {
 
 function patchSequenceAdd(newNode, oldNode, patches, index) {
   const element = oldNode.element
-  const lastChild = element.lastChild
+  // const lastChild = element.lastChild
+
+  const fragment = document.createDocumentFragment()
+  const lastChild = document.createTextNode('')
+  fragment.appendChild(lastChild)
 
   for (var i = index, length = patches.length; i < length && PATCH_SEQUENCE_ADD === patches[i].operation; i++) {
     inject(patches[i].newNode, lastChild, true)
   }
+
+  element.appendChild(fragment)
 
   return (i - index)
 }
