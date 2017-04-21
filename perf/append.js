@@ -1,5 +1,4 @@
-import html from '../html'
-import mount from '../mount'
+import { html, mount } from '../'
 
 const state = {
   items: []

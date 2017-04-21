@@ -11,9 +11,10 @@ for (let i = 0; i < 10000; i++) {
   state.items.push(i)
 }
 
-const renderItem = (item) => html`
-  <tr><td>${item}</td></tr>
-`
+const renderItem = (item) => ('number' === typeof item
+  ? html`<tr><td>${item}</td></tr>`
+  : html`<tr><td><b>${item}</b></td></tr>`
+)
 
 const render = (state) => html`
   <main>

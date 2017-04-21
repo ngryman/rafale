@@ -1,7 +1,4 @@
-import html from '../html'
-import mount from '../mount'
-import diff from '../diff'
-import patch from '../patch'
+import { html, mount, diff, patch } from '../'
 
 const state = {
   items: []
@@ -18,9 +15,7 @@ const renderItem = (item) => html`
 const render = (state) => html`
   <main>
     <table>
-      ${
-        state.items.map(renderItem)
-      }
+      ${state.items.map(renderItem)}
     </table>
   </main>
 `
@@ -34,8 +29,10 @@ for (let i = 0; i < 10000; i++) {
   }
 }
 
-console.profile('update')
-const vtree2 = render(state)
-const patches = diff(vtree2, vtree)
-patch(patches)
-console.profileEnd('update')
+requestAnimationFrame(() => {
+  console.profile('update')
+  const vtree2 = render(state)
+  const patches = diff(vtree2, vtree)
+  patch(patches)
+  requestAnimationFrame(() => console.profileEnd('update'))
+})

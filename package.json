@@ -1,12 +1,14 @@
 {
   "name": "kiff",
   "scripts": {
-    "start": "budo perf/insert.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
-    "start:preact": "budo perf/insert-preact.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
+    "start": "budo perf/update.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
+    "start:inferno": "budo perf/update-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
   },
   "dependencies": {
     "hyperapp": "^0.8.1",
     "hyperx": "^2.3.0",
+    "inferno": "^3.0.5",
+    "inferno-create-element": "^3.0.5",
     "preact": "^8.1.0"
   },
   "devDependencies": {

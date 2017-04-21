@@ -29,7 +29,7 @@ class Table extends Component {
 
   renderItem(item) {
     return h('tr', {}, [
-      h('td', {}, `${item}`)
+      h('td', {}, 'number' === typeof item ? item : h('b', {}, item))
     ])
   }
 
