@@ -16,8 +16,10 @@ const renderItem = (item) => h('tr', {}, [
 const root = document.createElement('div')
 document.body.appendChild(root)
 
-console.profile('mount inferno')
-Inferno.render(h('main', {},
-  h('table', {}, state.items.map(renderItem))
-), root)
-console.profileEnd('mount inferno')
+requestAnimationFrame(() => {
+  console.profile('mount inferno')
+  Inferno.render(h('main', {},
+    h('table', {}, state.items.map(renderItem))
+  ), root)
+  requestAnimationFrame(() => console.profileEnd('mount inferno'))
+})

@@ -1,8 +1,8 @@
 {
   "name": "kiff",
   "scripts": {
-    "start": "budo perf/update.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
-    "start:inferno": "budo perf/update-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
+    "start": "budo perf/append.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
+    "start:inferno": "budo perf/append-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
   },
   "dependencies": {
     "hyperapp": "^0.8.1",

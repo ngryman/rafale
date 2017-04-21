@@ -22,9 +22,9 @@ const render = (state) => html`
   </main>
 `
 
-render(state)
-
-console.profile('mount')
-const vtree = render(state)
-mount(vtree, document.body)
-console.profileEnd('mount')
+requestAnimationFrame(() => {
+  console.profile('mount')
+  const vtree = render(state)
+  mount(vtree, document.body)
+  requestAnimationFrame(() => console.profileEnd('mount'))
+})
