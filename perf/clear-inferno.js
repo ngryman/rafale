@@ -23,9 +23,9 @@ Inferno.render(h('main', {},
 state.items.length = 0
 
 requestAnimationFrame(() => {
-  console.profile('mount inferno')
+  console.profile('clear inferno')
   Inferno.render(h('main', {},
     h('table', {}, state.items.map(renderItem))
   ), root)
-  requestAnimationFrame(() => console.profileEnd('mount inferno'))
+  requestAnimationFrame(() => console.profileEnd('clear inferno'))
 })
