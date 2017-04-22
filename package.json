@@ -4,7 +4,9 @@
     "lint": "eslint *.js {lib,test}/**/*.js",
     "pretest": "yarn lint",
     "test": "cross-env NODE_ENV=test nyc ava",
-    "start": "yarn test -- --watch",
+    "test:snapshot": "ava --update-snapshots",
+    "start": "ava --watch",
+    "see-coverage": "nyc report --reporter=html && open coverage/index.html",
     "bundle": "rollup -c",
     "minify": "uglifyjs dist/kiff.js -c -m --reserved-file .reserved --mangle-props -o dist/kiff.min.js",
     "build": "yarn bundle && yarn minify",
@@ -21,6 +23,7 @@
   "devDependencies": {
     "ava": "^0.19.1",
     "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-istanbul": "^4.1.1",
     "babel-preset-env": "^1.4.0",
     "babelify": "^7.3.0",
     "browser-env": "^2.0.30",

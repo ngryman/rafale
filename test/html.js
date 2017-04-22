@@ -14,25 +14,45 @@ function toJSON(vnode) {
 }
 
 test('create a simple component', t => {
-  const vtree = html`<p>foo</p>`
-  t.snapshot(toJSON(vtree))
+  const render = () => html`<p>foo</p>`
+  t.snapshot(toJSON(render()))
 })
 
 test('create a component with a primitive child', t => {
-  const primitive = 'foo'
-  const vtree = html`<p>${primitive}</p>`
-  t.snapshot(toJSON(vtree))
+  const render = (text) => html`<p>${text}</p>`
+  t.snapshot(toJSON(render('foo')))
 })
 
 test('create a component with a nested component child', t => {
-  const parapgraph = () => html`<p>foo</p>`
-  const vtree = html`<section>${parapgraph()}</section>`
-  t.snapshot(toJSON(vtree))
+  const renderText = () => html`<p>foo</p>`
+  const render = () => html`<section>${renderText()}</section>`
+  t.snapshot(toJSON(render()))
 })
 
 test('create a component with a sequence child', t => {
-  const sequence = ['foo', 'bar']
-  const parapgraph = (content, id) => html`<p id=${id}>${content}</p>`
-  const vtree = html`<section>${sequence.map(parapgraph)}</ul>`
-  t.snapshot(toJSON(vtree))
+  const renderText = (text) => html`<p>${text}</p>`
+  const render = (content) => html`<section>${content.map(renderText)}</ul>`
+  t.snapshot(toJSON(render(['foo', 'bar'])))
+})
+
+test('create a component with an attribute', t => {
+  const render = (id) => html`<section id="${id}"></section>`
+  t.snapshot(toJSON(render('foo')))
+})
+
+test('create a component with an attribute without quotes', t => {
+  const render = (id) => html`<section id=${id}></section>`
+  t.snapshot(toJSON(render('foo')))
+})
+
+test('create a component with a function attribute', t => {
+  const render = (handler) => html`<button onclick=${handler}></section>`
+  t.snapshot(toJSON(render(function handler() {})))
+})
+
+test('accept rootless functions', t => {
+  const renderText = (text) => html`<p>${text}</p>`
+  const renderContent = (content) => content.map(renderText)
+  const render = (content) => html`<section>${renderContent(content)}</section>`
+  t.snapshot(toJSON(render(['foo', 'bar'])))
 })
