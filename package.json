@@ -1,10 +1,15 @@
 {
   "name": "kiff",
   "scripts": {
+    "lint": "eslint *.js {lib,test}/**/*.js",
+    "pretest": "yarn lint",
+    "test": "cross-env NODE_ENV=test nyc ava",
+    "start": "yarn test -- --watch",
     "bundle": "rollup -c",
     "minify": "uglifyjs dist/kiff.js -c -m --reserved-file .reserved --mangle-props -o dist/kiff.min.js",
-    "start": "budo perf/clear.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
-    "start:inferno": "budo perf/clear-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
+    "build": "yarn bundle && yarn minify",
+    "start2": "budo perf/insert.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
+    "start:inferno": "budo perf/insert-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
   },
   "dependencies": {
     "hyperapp": "^0.8.1",
@@ -14,17 +19,26 @@
     "preact": "^8.1.0"
   },
   "devDependencies": {
+    "ava": "^0.19.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.4.0",
     "babelify": "^7.3.0",
+    "browser-env": "^2.0.30",
     "budo": "^9.4.7",
     "eslint": "^3.19.0",
     "eslint-config-ngryman": "^1.7.1",
+    "nyc": "^10.2.0",
     "rollup": "^0.41.6",
     "rollup-plugin-buble": "^0.15.0",
     "rollup-plugin-cleanup": "^1.0.0",
     "rollup-plugin-commonjs": "^8.0.2",
     "rollup-plugin-node-resolve": "^3.0.0",
     "uglify-js": "^2.8.22"
+  },
+  "ava": {
+    "require": [
+      "babel-register",
+      "./test/helpers/browser-env.js"
+    ]
   }
 }

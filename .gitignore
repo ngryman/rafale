@@ -5,6 +5,7 @@ code.asm
 hydrogen.cfg
 coverage/
 dist/
+sandbox/
 
 # node
 node_modules/

@@ -1,0 +1,194 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create a component with a nested component child 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [],
+      "component": Object {
+        "slots": Array [],
+        "template": "<p>foo</p>",
+      },
+      "data": null,
+      "type": 2,
+    },
+  ],
+  "component": Object {
+    "slots": Array [
+      Slot {
+        "name": null,
+        "path": Array [
+          0,
+        ],
+        "type": 0,
+      },
+    ],
+    "template": "<section></section>",
+  },
+  "data": null,
+  "type": 2,
+}
+`;
+
+exports[`create a component with a primitive child 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [],
+      "component": null,
+      "data": Object {
+        "value": "foo",
+      },
+      "type": 0,
+    },
+  ],
+  "component": Object {
+    "slots": Array [
+      Slot {
+        "name": null,
+        "path": Array [
+          0,
+        ],
+        "type": 0,
+      },
+    ],
+    "template": "<p></p>",
+  },
+  "data": null,
+  "type": 2,
+}
+`;
+
+exports[`create a component with a sequence child 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            Object {
+              "children": Array [],
+              "component": null,
+              "data": Object {
+                "value": 0,
+              },
+              "type": 0,
+            },
+            Object {
+              "children": Array [],
+              "component": null,
+              "data": Object {
+                "value": "foo",
+              },
+              "type": 0,
+            },
+          ],
+          "component": Object {
+            "slots": Array [
+              Slot {
+                "name": "id",
+                "path": Array [],
+                "type": 1,
+              },
+              Slot {
+                "name": null,
+                "path": Array [
+                  0,
+                ],
+                "type": 0,
+              },
+            ],
+            "template": "<p id=\\"🦄\\"></p>",
+          },
+          "data": null,
+          "type": 2,
+        },
+        Object {
+          "children": Array [
+            Object {
+              "children": Array [],
+              "component": null,
+              "data": Object {
+                "value": 1,
+              },
+              "type": 0,
+            },
+            Object {
+              "children": Array [],
+              "component": null,
+              "data": Object {
+                "value": "bar",
+              },
+              "type": 0,
+            },
+          ],
+          "component": Object {
+            "slots": Array [
+              Slot {
+                "name": "id",
+                "path": Array [],
+                "type": 1,
+              },
+              Slot {
+                "name": null,
+                "path": Array [
+                  0,
+                ],
+                "type": 0,
+              },
+            ],
+            "template": "<p id=\\"🦄\\"></p>",
+          },
+          "data": null,
+          "type": 2,
+        },
+      ],
+      "component": Object {
+        "slots": Array [
+          Slot {
+            "name": "id",
+            "path": Array [],
+            "type": 1,
+          },
+          Slot {
+            "name": null,
+            "path": Array [
+              0,
+            ],
+            "type": 0,
+          },
+        ],
+        "template": "<p id=\\"🦄\\"></p>",
+      },
+      "data": null,
+      "type": 1,
+    },
+  ],
+  "component": Object {
+    "slots": Array [
+      Slot {
+        "name": null,
+        "path": Array [
+          0,
+        ],
+        "type": 0,
+      },
+    ],
+    "template": "<section></section>",
+  },
+  "data": null,
+  "type": 2,
+}
+`;
+
+exports[`create a simple component 1`] = `
+Object {
+  "children": Array [],
+  "component": Object {
+    "slots": Array [],
+    "template": "<p>foo</p>",
+  },
+  "data": null,
+  "type": 2,
+}
+`;

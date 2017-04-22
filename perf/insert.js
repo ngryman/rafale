@@ -1,7 +1,4 @@
-import html from '../html'
-import diff from '../diff'
-import mount from '../mount'
-import patch from '../patch'
+import { html, mount, diff, patch } from '../'
 
 const state = {
   items: []
@@ -37,4 +34,4 @@ setTimeout(() => {
   const patches = diff(vtree2, vtree)
   patch(patches)
   requestAnimationFrame(() => console.profileEnd('insert'))
-}, 0)
+}, 500)
