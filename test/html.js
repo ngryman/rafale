@@ -1,58 +1,51 @@
 import test from 'ava'
-import html from '../lib/html'
+import { vnodeToJSON } from './helpers/to-json'
+import { html } from '../'
 
-function toJSON(vnode) {
-  return {
-    type: vnode.type,
-    data: vnode.data,
-    children: vnode.children.map(toJSON),
-    component: vnode.component && {
-      template: vnode.component.template.innerHTML,
-      slots: vnode.component.slots
-    }
-  }
+function macro(t, vtree) {
+  t.snapshot(vnodeToJSON(vtree))
 }
 
-test('create a simple component', t => {
-  const render = () => html`<p>foo</p>`
-  t.snapshot(toJSON(render()))
-})
+test('create a simple component', macro,
+  html`<b>foo</b>`
+)
 
-test('create a component with a primitive child', t => {
-  const render = (text) => html`<p>${text}</p>`
-  t.snapshot(toJSON(render('foo')))
-})
+test('create a component with a primitive child', macro,
+  html`<b>${'foo'}</b>`
+)
 
-test('create a component with a nested component child', t => {
-  const renderText = () => html`<p>foo</p>`
-  const render = () => html`<section>${renderText()}</section>`
-  t.snapshot(toJSON(render()))
-})
+test('create a component with a nested component child', macro,
+  html`<p>${
+    html`<b>foo</b>`
+  }</p>`
+)
 
-test('create a component with a sequence child', t => {
-  const renderText = (text) => html`<p>${text}</p>`
-  const render = (content) => html`<section>${content.map(renderText)}</ul>`
-  t.snapshot(toJSON(render(['foo', 'bar'])))
-})
+test('create a component with a sequence child', macro,
+  html`<p>${
+    ['foo', 'bar'].map(text =>
+      html`<b>${text}</b>`
+    )
+  }</p>`
+)
 
-test('create a component with an attribute', t => {
-  const render = (id) => html`<section id="${id}"></section>`
-  t.snapshot(toJSON(render('foo')))
-})
+test('create a component with a primitive attribute', macro,
+  html`<p id="${'foo'}"></p>`
+)
 
-test('create a component with an attribute without quotes', t => {
-  const render = (id) => html`<section id=${id}></section>`
-  t.snapshot(toJSON(render('foo')))
-})
+test('create a component with a primitive attribute without quotes', macro,
+  html`<p id=${'foo bar'}></p>`
+)
 
-test('create a component with a function attribute', t => {
-  const render = (handler) => html`<button onclick=${handler}></section>`
-  t.snapshot(toJSON(render(function handler() {})))
-})
+test('create a component with mixed attributes', macro,
+  html`<p id="${'foo'}" class="bar"></p>`
+)
 
-test('accept rootless functions', t => {
-  const renderText = (text) => html`<p>${text}</p>`
-  const renderContent = (content) => content.map(renderText)
-  const render = (content) => html`<section>${renderContent(content)}</section>`
-  t.snapshot(toJSON(render(['foo', 'bar'])))
-})
+test('create a component with a function attribute', macro,
+  html`<button onclick=${_ => {}}></button>`
+)
+
+test('create a component with dummy text nodes', macro,
+  html`<b>
+    ${'foo'}
+  </b>`
+)

@@ -1,11 +1,30 @@
-export default function toJSON(vnode) {
-  return {
-    type: vnode.type,
-    data: vnode.data,
-    children: vnode.children.map(toJSON),
-    component: vnode.component && {
-      template: vnode.component.template.innerHTML,
-      slots: vnode.component.slots
-    }
+export const vnodeToJSON = (vnode) => ({
+  type: vnode.type,
+  data: vnode.data,
+  children: vnode.children.map(vnodeToJSON),
+  component: vnode.component && {
+    template: vnode.component.template.innerHTML,
+    slots: vnode.component.slots
   }
-}
+})
+
+const patchToJSON = (patch) => ({
+  operation: patch.operation,
+  newNode: patch.newNode && vnodeToJSON(patch.newNode),
+  oldNode: patch.oldNode && vnodeToJSON(patch.oldNode)
+})
+
+export const patchesToJSON = (patches) => patches.map(patchToJSON)
+
+const attributeToJSON = (attribute) => ({
+  name: attribute.name,
+  value: attribute.value
+})
+
+export const nodeToJSON = (node) => ({
+  tagName: node.tagName,
+  textContent: node.textContent,
+  attributes: node.attributes && [].map.call(node.attributes, attributeToJSON),
+  onclick: node.onclick,
+  children: node.children && [].map.call(node.children, nodeToJSON)
+})

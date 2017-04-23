@@ -10,7 +10,7 @@ for (let i = 0; i < 10000; i++) {
 
 const renderItem = (item) => ('number' === typeof item
   ? html`<tr><td>${item}</td></tr>`
-  : html`<tr><td><b>${item}</b></td></tr>`
+  : html`<tr><td><b onclick=${_ => { alert('coucou') }}>${item}</b></td></tr>`
 )
 
 const render = (state) => html`

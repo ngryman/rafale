@@ -1,0 +1,199 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`mount a component with a function attribute 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "onclick": [Function],
+      "tagName": "BUTTON",
+      "textContent": "",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "",
+}
+`;
+
+exports[`mount a component with a nested component child 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "onclick": undefined,
+      "tagName": "P",
+      "textContent": "foo",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "foo",
+}
+`;
+
+exports[`mount a component with a primitive attribute 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [
+        Object {
+          "name": "id",
+          "value": "foo",
+        },
+      ],
+      "children": Array [],
+      "onclick": undefined,
+      "tagName": "P",
+      "textContent": "",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "",
+}
+`;
+
+exports[`mount a component with a primitive attribute without quotes 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [
+        Object {
+          "name": "id",
+          "value": "foo bar",
+        },
+      ],
+      "children": Array [],
+      "onclick": undefined,
+      "tagName": "P",
+      "textContent": "",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "",
+}
+`;
+
+exports[`mount a component with a primitive child 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "onclick": undefined,
+      "tagName": "B",
+      "textContent": "foo",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "foo",
+}
+`;
+
+exports[`mount a component with a sequence child 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "onclick": undefined,
+          "tagName": "B",
+          "textContent": "foo",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "onclick": undefined,
+          "tagName": "B",
+          "textContent": "bar",
+        },
+      ],
+      "onclick": undefined,
+      "tagName": "P",
+      "textContent": "foobar",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "foobar",
+}
+`;
+
+exports[`mount a component with dummy text nodes 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "onclick": undefined,
+      "tagName": "B",
+      "textContent": "foo
+  ",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "foo
+  ",
+}
+`;
+
+exports[`mount a component with mixed attributes 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [
+        Object {
+          "name": "id",
+          "value": "foo",
+        },
+        Object {
+          "name": "class",
+          "value": "bar",
+        },
+      ],
+      "children": Array [],
+      "onclick": undefined,
+      "tagName": "P",
+      "textContent": "",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "",
+}
+`;
+
+exports[`mount a simple component 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "onclick": undefined,
+      "tagName": "P",
+      "textContent": "foo",
+    },
+  ],
+  "onclick": undefined,
+  "tagName": "DIV",
+  "textContent": "foo",
+}
+`;

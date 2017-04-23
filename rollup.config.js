@@ -6,8 +6,8 @@ import cleanup from 'rollup-plugin-cleanup'
 export default {
   format: 'umd',
   entry: 'index.js',
-  dest: 'dist/kiff.js',
-  moduleName: 'kiff',
+  dest: 'dist/paris.js',
+  moduleName: 'paris',
   plugins: [
     resolve({
       jsnext: true,

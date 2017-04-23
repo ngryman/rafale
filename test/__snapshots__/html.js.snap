@@ -1,96 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`accept rootless functions 1`] = `
-Object {
-  "children": Array [
-    Object {
-      "children": Array [
-        Object {
-          "children": Array [
-            Object {
-              "children": Array [],
-              "component": null,
-              "data": Object {
-                "value": "foo",
-              },
-              "type": 0,
-            },
-          ],
-          "component": Object {
-            "slots": Array [
-              Slot {
-                "name": null,
-                "path": Array [
-                  0,
-                ],
-                "type": 0,
-              },
-            ],
-            "template": "<p></p>",
-          },
-          "data": null,
-          "type": 2,
-        },
-        Object {
-          "children": Array [
-            Object {
-              "children": Array [],
-              "component": null,
-              "data": Object {
-                "value": "bar",
-              },
-              "type": 0,
-            },
-          ],
-          "component": Object {
-            "slots": Array [
-              Slot {
-                "name": null,
-                "path": Array [
-                  0,
-                ],
-                "type": 0,
-              },
-            ],
-            "template": "<p></p>",
-          },
-          "data": null,
-          "type": 2,
-        },
-      ],
-      "component": Object {
-        "slots": Array [
-          Slot {
-            "name": null,
-            "path": Array [
-              0,
-            ],
-            "type": 0,
-          },
-        ],
-        "template": "<p></p>",
-      },
-      "data": null,
-      "type": 1,
-    },
-  ],
-  "component": Object {
-    "slots": Array [
-      Slot {
-        "name": null,
-        "path": Array [
-          0,
-        ],
-        "type": 0,
-      },
-    ],
-    "template": "<section></section>",
-  },
-  "data": null,
-  "type": 2,
-}
-`;
-
 exports[`create a component with a function attribute 1`] = `
 Object {
   "children": Array [
@@ -106,12 +15,12 @@ Object {
   "component": Object {
     "slots": Array [
       Slot {
-        "name": "id",
+        "name": "onclick",
         "path": Array [],
         "type": 1,
       },
     ],
-    "template": "<section id=\\"🦄\\"></section>",
+    "template": "<button onclick=\\"🦄\\"></button>",
   },
   "data": null,
   "type": 2,
@@ -125,7 +34,7 @@ Object {
       "children": Array [],
       "component": Object {
         "slots": Array [],
-        "template": "<p>foo</p>",
+        "template": "<b>foo</b>",
       },
       "data": null,
       "type": 2,
@@ -141,7 +50,61 @@ Object {
         "type": 0,
       },
     ],
-    "template": "<section></section>",
+    "template": "<p></p>",
+  },
+  "data": null,
+  "type": 2,
+}
+`;
+
+exports[`create a component with a primitive attribute 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [],
+      "component": null,
+      "data": Object {
+        "value": "foo",
+      },
+      "type": 0,
+    },
+  ],
+  "component": Object {
+    "slots": Array [
+      Slot {
+        "name": "id",
+        "path": Array [],
+        "type": 1,
+      },
+    ],
+    "template": "<p id=\\"🦄\\"></p>",
+  },
+  "data": null,
+  "type": 2,
+}
+`;
+
+exports[`create a component with a primitive attribute without quotes 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [],
+      "component": null,
+      "data": Object {
+        "value": "foo bar",
+      },
+      "type": 0,
+    },
+  ],
+  "component": Object {
+    "slots": Array [
+      Slot {
+        "name": "id",
+        "path": Array [],
+        "type": 1,
+      },
+    ],
+    "template": "<p id=\\"🦄\\"></p>",
   },
   "data": null,
   "type": 2,
@@ -170,7 +133,7 @@ Object {
         "type": 0,
       },
     ],
-    "template": "<p></p>",
+    "template": "<b></b>",
   },
   "data": null,
   "type": 2,
@@ -203,7 +166,7 @@ Object {
                 "type": 0,
               },
             ],
-            "template": "<p></p>",
+            "template": "<b></b>",
           },
           "data": null,
           "type": 2,
@@ -229,7 +192,7 @@ Object {
                 "type": 0,
               },
             ],
-            "template": "<p></p>",
+            "template": "<b></b>",
           },
           "data": null,
           "type": 2,
@@ -245,7 +208,7 @@ Object {
             "type": 0,
           },
         ],
-        "template": "<p></p>",
+        "template": "<b></b>",
       },
       "data": null,
       "type": 1,
@@ -261,14 +224,44 @@ Object {
         "type": 0,
       },
     ],
-    "template": "<section></section>",
+    "template": "<p></p>",
   },
   "data": null,
   "type": 2,
 }
 `;
 
-exports[`create a component with an attribute 1`] = `
+exports[`create a component with dummy text nodes 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [],
+      "component": null,
+      "data": Object {
+        "value": "foo",
+      },
+      "type": 0,
+    },
+  ],
+  "component": Object {
+    "slots": Array [
+      Slot {
+        "name": null,
+        "path": Array [
+          0,
+        ],
+        "type": 0,
+      },
+    ],
+    "template": "<b>
+  </b>",
+  },
+  "data": null,
+  "type": 2,
+}
+`;
+
+exports[`create a component with mixed attributes 1`] = `
 Object {
   "children": Array [
     Object {
@@ -288,34 +281,7 @@ Object {
         "type": 1,
       },
     ],
-    "template": "<section id=\\"🦄\\"></section>",
-  },
-  "data": null,
-  "type": 2,
-}
-`;
-
-exports[`create a component with an attribute without quotes 1`] = `
-Object {
-  "children": Array [
-    Object {
-      "children": Array [],
-      "component": null,
-      "data": Object {
-        "value": "foo",
-      },
-      "type": 0,
-    },
-  ],
-  "component": Object {
-    "slots": Array [
-      Slot {
-        "name": "id",
-        "path": Array [],
-        "type": 1,
-      },
-    ],
-    "template": "<section id=\\"🦄\\"></section>",
+    "template": "<p id=\\"🦄\\" class=\\"bar\\"></p>",
   },
   "data": null,
   "type": 2,
@@ -327,7 +293,7 @@ Object {
   "children": Array [],
   "component": Object {
     "slots": Array [],
-    "template": "<p>foo</p>",
+    "template": "<b>foo</b>",
   },
   "data": null,
   "type": 2,

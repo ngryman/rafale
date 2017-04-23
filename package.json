@@ -1,14 +1,14 @@
 {
-  "name": "kiff",
+  "name": "paris",
   "scripts": {
     "lint": "eslint *.js {lib,test}/**/*.js",
     "pretest": "yarn lint",
     "test": "cross-env NODE_ENV=test nyc ava",
-    "test:snapshot": "ava --update-snapshots",
-    "start": "ava --watch",
+    "test:snapshot": "cross-env NODE_ENV=test ava --update-snapshots",
+    "start": "cross-env NODE_ENV=test ava --watch",
     "see-coverage": "nyc report --reporter=html && open coverage/index.html",
     "bundle": "rollup -c",
-    "minify": "uglifyjs dist/kiff.js -c -m --reserved-file .reserved --mangle-props -o dist/kiff.min.js",
+    "minify": "uglifyjs dist/paris.js -c -m --reserved-file .reserved --mangle-props -o dist/paris.min.js",
     "build": "yarn bundle && yarn minify",
     "start2": "budo perf/insert.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
     "start:inferno": "budo perf/insert-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
