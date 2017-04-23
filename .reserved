@@ -1,6 +1,34 @@
 {
-  "vars": [],
+  "vars": [
+  ],
   "props": [
-
+    "appendChild",
+    "attributes",
+    "body",
+    "childNodes",
+    "content",
+    "createDocumentFragment",
+    "createElement",
+    "createTextNode",
+    "firstChild",
+    "firstElementChild",
+    "forEach",
+    "importNode",
+    "innerHTML",
+    "isSameNode",
+    "lastChild",
+    "length",
+    "name",
+    "nodeValue",
+    "parentNode",
+    "pop",
+    "push",
+    "remove",
+    "removeAttribute",
+    "removeChild",
+    "replaceChild",
+    "setAttribute",
+    "slice",
+    "value"
   ]
 }

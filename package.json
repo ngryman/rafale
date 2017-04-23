@@ -1,5 +1,5 @@
 {
-  "name": "paris",
+  "name": "rafale",
   "scripts": {
     "lint": "eslint *.js {lib,test}/**/*.js",
     "pretest": "yarn lint",
@@ -8,7 +8,7 @@
     "start": "cross-env NODE_ENV=test ava --watch",
     "see-coverage": "nyc report --reporter=html && open coverage/index.html",
     "bundle": "rollup -c",
-    "minify": "uglifyjs dist/paris.js -c -m --reserved-file .reserved --mangle-props -o dist/paris.min.js",
+    "minify": "uglifyjs dist/rafale.js -c -m --reserved-file .reserved --mangle-props -o dist/rafale.min.js && gzip-size dist/rafale.min.js",
     "build": "yarn bundle && yarn minify",
     "start2": "budo perf/insert.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
     "start:inferno": "budo perf/insert-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"
@@ -30,6 +30,7 @@
     "budo": "^9.4.7",
     "eslint": "^3.19.0",
     "eslint-config-ngryman": "^1.7.1",
+    "gzip-size": "^3.0.0",
     "nyc": "^10.2.0",
     "rollup": "^0.41.6",
     "rollup-plugin-buble": "^0.15.0",
