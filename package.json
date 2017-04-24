@@ -9,7 +9,7 @@
     "start": "cross-env NODE_ENV=test ava --watch",
     "see-coverage": "nyc report --reporter=html && open coverage/index.html",
     "bundle": "rollup -c",
-    "minify": "uglifyjs dist/rafale.js -c -m --reserved-file .reserved --mangle-props -o dist/rafale.min.js && gzip-size dist/rafale.min.js",
+    "minify": "uglifyjs dist/rafale.js -c unsafe_comps,pure_getters -m --reserved-file .reserved --mangle-props -o dist/rafale.min.js && gzip-size dist/rafale.min.js",
     "build": "yarn bundle && yarn minify",
     "start2": "budo perf/insert.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]",
     "start:inferno": "budo perf/insert-inferno.js -p3000 -- -t babelify --presets [ env ] --plugins [ add-module-exports ]"

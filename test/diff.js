@@ -75,6 +75,6 @@ test('copy ref even if vnodes are the same', t => {
   const oldVTree = wrap(renderBold('foo'))
   const newVTree = wrap(renderBold('foo'))
   diff(newVTree, oldVTree)
-  t.is(newVTree.element, oldVTree.element)
-  t.is(newVTree.children[0].element, oldVTree.children[0].element)
+  t.is(newVTree.domNode, oldVTree.domNode)
+  t.is(newVTree.children[0].domNode, oldVTree.children[0].domNode)
 })

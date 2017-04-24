@@ -6,7 +6,7 @@ function macro(t, newVTree, oldVTree, html) {
   mount(oldVTree, t.context)
   patch(diff(newVTree, oldVTree))
   t.snapshot(nodeToJSON(t.context))
-  t.true(newVTree.element.isSameNode(t.context.firstElementChild))
+  t.true(newVTree.domNode.isSameNode(t.context.firstElementChild))
 }
 
 const renderPrimitive = (text) => text
