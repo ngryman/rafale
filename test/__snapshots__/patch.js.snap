@@ -1,0 +1,302 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`add items to a sequence 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "foo",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "bar",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "baz",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "qux",
+        },
+      ],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "foobarbazqux",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foobarbazqux",
+}
+`;
+
+exports[`clear a sequence 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "",
+}
+`;
+
+exports[`morph a component 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "foo",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foo",
+}
+`;
+
+exports[`morph a component into a primitive 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "foo",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foo",
+}
+`;
+
+exports[`morph a component into a sequence 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "foobar",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foobar",
+}
+`;
+
+exports[`morph a root component 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "nodeName": "I",
+      "onclick": undefined,
+      "textContent": "foo",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foo",
+}
+`;
+
+exports[`morph a sequence 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "I",
+          "onclick": undefined,
+          "textContent": "foo",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "I",
+          "onclick": undefined,
+          "textContent": "bar",
+        },
+      ],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "foobar",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foobar",
+}
+`;
+
+exports[`morph a sequence into a component 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [],
+      "nodeName": "B",
+      "onclick": undefined,
+      "textContent": "foo",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foo",
+}
+`;
+
+exports[`remove items from a sequence 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "foo",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "baz",
+        },
+      ],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "foobaz",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foobaz",
+}
+`;
+
+exports[`reorder items of a sequence 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "qux",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "baz",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "bar",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "foo",
+        },
+      ],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "quxbazbarfoo",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "quxbazbarfoo",
+}
+`;
+
+exports[`update items of a sequence 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
+      "children": Array [
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "baz",
+        },
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "qux",
+        },
+      ],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "bazqux",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "bazqux",
+}
+`;
