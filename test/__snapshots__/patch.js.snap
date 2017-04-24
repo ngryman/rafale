@@ -176,8 +176,34 @@ Object {
   "children": Array [
     Object {
       "attributes": Array [],
+      "children": Array [
+        Object {
+          "attributes": Array [],
+          "children": Array [],
+          "nodeName": "B",
+          "onclick": undefined,
+          "textContent": "foo",
+        },
+      ],
+      "nodeName": "P",
+      "onclick": undefined,
+      "textContent": "foo",
+    },
+  ],
+  "nodeName": "DIV",
+  "onclick": undefined,
+  "textContent": "foo",
+}
+`;
+
+exports[`morph a sequence into a primitive 1`] = `
+Object {
+  "attributes": Array [],
+  "children": Array [
+    Object {
+      "attributes": Array [],
       "children": Array [],
-      "nodeName": "B",
+      "nodeName": "P",
       "onclick": undefined,
       "textContent": "foo",
     },

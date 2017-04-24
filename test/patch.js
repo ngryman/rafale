@@ -49,12 +49,12 @@ test('morph a sequence', macro,
   wrap(['foo', 'bar'].map(renderBold))
 )
 
-test.skip('morph a sequence into a component', macro,
+test('morph a sequence into a component', macro,
   wrap(renderBold('foo')),
   wrap(['foo', 'bar'].map(renderBold))
 )
 
-test.skip('morph a sequence into a primitive', macro,
+test('morph a sequence into a primitive', macro,
   wrap(renderPrimitive('foo')),
   wrap(['foo', 'bar'].map(renderBold))
 )
