@@ -7,13 +7,13 @@ Object {
     Object {
       "attributes": Array [],
       "children": Array [],
+      "nodeName": "BUTTON",
       "onclick": [Function],
-      "tagName": "BUTTON",
       "textContent": "",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "",
 }
 `;
@@ -25,13 +25,13 @@ Object {
     Object {
       "attributes": Array [],
       "children": Array [],
+      "nodeName": "P",
       "onclick": undefined,
-      "tagName": "P",
       "textContent": "foo",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "foo",
 }
 `;
@@ -48,13 +48,13 @@ Object {
         },
       ],
       "children": Array [],
+      "nodeName": "P",
       "onclick": undefined,
-      "tagName": "P",
       "textContent": "",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "",
 }
 `;
@@ -71,13 +71,13 @@ Object {
         },
       ],
       "children": Array [],
+      "nodeName": "P",
       "onclick": undefined,
-      "tagName": "P",
       "textContent": "",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "",
 }
 `;
@@ -89,13 +89,13 @@ Object {
     Object {
       "attributes": Array [],
       "children": Array [],
+      "nodeName": "B",
       "onclick": undefined,
-      "tagName": "B",
       "textContent": "foo",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "foo",
 }
 `;
@@ -110,25 +110,25 @@ Object {
         Object {
           "attributes": Array [],
           "children": Array [],
+          "nodeName": "B",
           "onclick": undefined,
-          "tagName": "B",
           "textContent": "foo",
         },
         Object {
           "attributes": Array [],
           "children": Array [],
+          "nodeName": "B",
           "onclick": undefined,
-          "tagName": "B",
           "textContent": "bar",
         },
       ],
+      "nodeName": "P",
       "onclick": undefined,
-      "tagName": "P",
       "textContent": "foobar",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "foobar",
 }
 `;
@@ -140,14 +140,14 @@ Object {
     Object {
       "attributes": Array [],
       "children": Array [],
+      "nodeName": "B",
       "onclick": undefined,
-      "tagName": "B",
       "textContent": "foo
   ",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "foo
   ",
 }
@@ -169,13 +169,13 @@ Object {
         },
       ],
       "children": Array [],
+      "nodeName": "P",
       "onclick": undefined,
-      "tagName": "P",
       "textContent": "",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "",
 }
 `;
@@ -187,13 +187,13 @@ Object {
     Object {
       "attributes": Array [],
       "children": Array [],
+      "nodeName": "P",
       "onclick": undefined,
-      "tagName": "P",
       "textContent": "foo",
     },
   ],
+  "nodeName": "DIV",
   "onclick": undefined,
-  "tagName": "DIV",
   "textContent": "foo",
 }
 `;

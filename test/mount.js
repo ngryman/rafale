@@ -5,6 +5,7 @@ import { html, mount } from '../'
 function macro(t, vtree) {
   mount(vtree, t.context)
   t.snapshot(nodeToJSON(t.context))
+  t.true(vtree.element.isSameNode(t.context.firstElementChild))
 }
 
 test.beforeEach(t => {

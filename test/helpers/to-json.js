@@ -22,7 +22,7 @@ const attributeToJSON = (attribute) => ({
 })
 
 export const nodeToJSON = (node) => ({
-  tagName: node.tagName,
+  nodeName: node.nodeName,
   textContent: node.textContent,
   attributes: node.attributes && [].map.call(node.attributes, attributeToJSON),
   onclick: node.onclick,

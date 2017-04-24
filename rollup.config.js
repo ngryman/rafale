@@ -6,8 +6,8 @@ import cleanup from 'rollup-plugin-cleanup'
 export default {
   format: 'umd',
   entry: 'index.js',
-  dest: 'dist/paris.js',
-  moduleName: 'paris',
+  dest: 'dist/rafale.js',
+  moduleName: 'rafale',
   plugins: [
     resolve({
       jsnext: true,

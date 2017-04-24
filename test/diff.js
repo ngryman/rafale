@@ -9,7 +9,7 @@ function macro(t, newVTree, oldVTree) {
 const renderPrimitive = (text) => text
 const renderBold = (text) => html`<b>${text}</b>`
 const renderItalic = (text) => html`<i>${text}</i>`
-const render = (content) => html`<p>${content}</p>`
+const wrap = (content) => html`<p>${content}</p>`
 
 test('morph a root component', macro,
   renderItalic('foo'),
@@ -17,56 +17,64 @@ test('morph a root component', macro,
 )
 
 test('morph a component', macro,
-  render(renderItalic('foo')),
-  render(renderBold('foo')),
+  wrap(renderItalic('foo')),
+  wrap(renderBold('foo')),
 )
 
 test('morph a component into a primitive', macro,
-  render(renderPrimitive('foo')),
-  render(renderBold('foo'))
+  wrap(renderPrimitive('foo')),
+  wrap(renderBold('foo'))
 )
 
 test('morph a component into a sequence', macro,
-  render(['foo', 'bar'].map(renderBold)),
-  render(renderBold('foo'))
+  wrap(['foo', 'bar'].map(renderBold)),
+  wrap(renderBold('foo'))
 )
 
 test('morph a sequence', macro,
-  render(['foo', 'bar'].map(renderItalic)),
-  render(['foo', 'bar'].map(renderBold))
+  wrap(['foo', 'bar'].map(renderItalic)),
+  wrap(['foo', 'bar'].map(renderBold))
 )
 
 test('morph a sequence into a component', macro,
-  render(renderBold('foo')),
-  render(['foo', 'bar'].map(renderBold))
+  wrap(renderBold('foo')),
+  wrap(['foo', 'bar'].map(renderBold))
 )
 
 test('morph a sequence into a primitive', macro,
-  render(renderPrimitive('foo')),
-  render(['foo', 'bar'].map(renderBold))
+  wrap(renderPrimitive('foo')),
+  wrap(['foo', 'bar'].map(renderBold))
 )
 
 test('add items to a sequence', macro,
-  render(['foo', 'bar', 'baz', 'qux'].map(renderBold)),
-  render(['foo', 'bar'].map(renderBold))
+  wrap(['foo', 'bar', 'baz', 'qux'].map(renderBold)),
+  wrap(['foo', 'bar'].map(renderBold))
 )
 
 test('remove items from a sequence', macro,
-  render(['foo', 'baz'].map(renderBold)),
-  render(['foo', 'bar', 'baz', 'qux'].map(renderBold))
+  wrap(['foo', 'baz'].map(renderBold)),
+  wrap(['foo', 'bar', 'baz', 'qux'].map(renderBold))
 )
 
 test('clear a sequence', macro,
-  render([].map(renderBold)),
-  render(['foo', 'bar'].map(renderBold))
+  wrap([].map(renderBold)),
+  wrap(['foo', 'bar'].map(renderBold))
 )
 
 test('update items of a sequence', macro,
-  render(['baz', 'qux'].map(renderBold)),
-  render(['foo', 'bar'].map(renderBold))
+  wrap(['baz', 'qux'].map(renderBold)),
+  wrap(['foo', 'bar'].map(renderBold))
 )
 
 test('reorder items of a sequence', macro,
-  render(['qux', 'baz', 'bar', 'foo'].map(renderBold)),
-  render(['foo', 'bar', 'baz', 'qux'].map(renderBold))
+  wrap(['qux', 'baz', 'bar', 'foo'].map(renderBold)),
+  wrap(['foo', 'bar', 'baz', 'qux'].map(renderBold))
 )
+
+test('copy ref even if vnodes are the same', t => {
+  const oldVTree = wrap(renderBold('foo'))
+  const newVTree = wrap(renderBold('foo'))
+  diff(newVTree, oldVTree)
+  t.is(newVTree.element, oldVTree.element)
+  t.is(newVTree.children[0].element, oldVTree.children[0].element)
+})
