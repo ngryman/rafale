@@ -16,6 +16,7 @@
     "forEach",
     "importNode",
     "innerHTML",
+    "isArray",
     "isSameNode",
     "lastChild",
     "length",
