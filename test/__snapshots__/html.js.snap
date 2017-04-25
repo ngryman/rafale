@@ -21,7 +21,7 @@ Object {
     "template": "<button onclick=\\"🦄\\"></button>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -35,7 +35,7 @@ Object {
         "template": "<b>foo</b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
   ],
   "component": Object {
@@ -51,7 +51,7 @@ Object {
     "template": "<p></p>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -76,7 +76,7 @@ Object {
     "template": "<p id=\\"🦄\\"></p>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -101,7 +101,7 @@ Object {
     "template": "<p id=\\"🦄\\"></p>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -128,7 +128,7 @@ Object {
     "template": "<b></b>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -159,7 +159,7 @@ Object {
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -183,7 +183,7 @@ Object {
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -199,7 +199,7 @@ Object {
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
   ],
   "component": Object {
@@ -215,7 +215,7 @@ Object {
     "template": "<p></p>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -243,7 +243,7 @@ Object {
   </b>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -268,7 +268,7 @@ Object {
     "template": "<p id=\\"🦄\\" class=\\"bar\\"></p>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;
 
@@ -280,6 +280,6 @@ Object {
     "template": "<b>foo</b>",
   },
   "type": 2,
-  "value": "",
+  "value": null,
 }
 `;

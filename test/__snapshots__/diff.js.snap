@@ -25,7 +25,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -51,7 +51,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -75,7 +75,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -91,7 +91,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "operation": 7,
   },
@@ -118,7 +118,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -144,7 +144,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -168,7 +168,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -184,7 +184,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "operation": 7,
   },
@@ -198,7 +198,7 @@ Array [
       "children": Array [],
       "component": null,
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -224,7 +224,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -248,7 +248,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -264,7 +264,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "operation": 9,
   },
@@ -296,7 +296,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -320,7 +320,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 5,
   },
@@ -347,7 +347,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -371,7 +371,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 2,
   },
@@ -409,7 +409,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 5,
   },
@@ -442,7 +442,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 0,
   },
@@ -476,7 +476,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -500,7 +500,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -516,7 +516,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -540,7 +540,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 5,
   },
@@ -569,7 +569,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -593,7 +593,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -609,7 +609,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -633,7 +633,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 1,
   },
@@ -665,7 +665,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -689,7 +689,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 5,
   },
@@ -716,7 +716,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -740,7 +740,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 2,
   },
@@ -772,7 +772,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -796,7 +796,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 5,
   },
@@ -823,7 +823,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -847,7 +847,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 2,
   },
@@ -874,7 +874,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -898,7 +898,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 5,
   },
@@ -925,7 +925,7 @@ Array [
         "template": "<i></i>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -949,7 +949,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 2,
   },
@@ -981,7 +981,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -1007,7 +1007,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -1031,7 +1031,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -1047,7 +1047,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "operation": 4,
   },
@@ -1074,7 +1074,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "oldNode": Object {
       "children": Array [
@@ -1100,7 +1100,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -1124,7 +1124,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -1140,7 +1140,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "operation": 2,
   },
@@ -1180,7 +1180,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -1204,7 +1204,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -1220,7 +1220,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "operation": 4,
   },
@@ -1255,7 +1255,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
         Object {
           "children": Array [
@@ -1279,7 +1279,7 @@ Array [
             "template": "<b></b>",
           },
           "type": 2,
-          "value": "",
+          "value": null,
         },
       ],
       "component": Object {
@@ -1295,7 +1295,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 1,
-      "value": "",
+      "value": null,
     },
     "operation": 0,
   },
@@ -1343,7 +1343,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 8,
   },
@@ -1371,7 +1371,7 @@ Array [
         "template": "<b></b>",
       },
       "type": 2,
-      "value": "",
+      "value": null,
     },
     "operation": 8,
   },

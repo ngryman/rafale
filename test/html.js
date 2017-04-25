@@ -49,13 +49,3 @@ test('create a component with dummy text nodes', macro,
     ${'foo'}
   </b>`
 )
-
-test('coerce a number primitive to string', t => {
-  const vtree = html`<b>${1}</b>`
-  t.true('string' === typeof vtree.children[0].value)
-})
-
-test('keep a function primitive as is', t => {
-  const vtree = html`<b onclick="${_ => {}}"></b>`
-  t.true('function' === typeof vtree.children[0].value)
-})
