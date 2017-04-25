@@ -8,10 +8,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "baz",
-          },
           "type": 0,
+          "value": "baz",
         },
       ],
       "component": Object {
@@ -26,8 +24,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
@@ -36,10 +34,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -54,18 +50,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -80,8 +74,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -96,8 +90,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "operation": 7,
   },
@@ -107,10 +101,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "qux",
-          },
           "type": 0,
+          "value": "qux",
         },
       ],
       "component": Object {
@@ -125,8 +117,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
@@ -135,10 +127,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -153,18 +143,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -179,8 +167,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -195,8 +183,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "operation": 7,
   },
@@ -209,8 +197,8 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
@@ -219,10 +207,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -237,18 +223,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -263,8 +247,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -279,8 +263,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "operation": 9,
   },
@@ -295,10 +279,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -313,18 +295,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -339,8 +319,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 5,
   },
@@ -350,10 +330,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -368,18 +346,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -394,8 +370,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 2,
   },
@@ -408,20 +384,16 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -436,8 +408,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 5,
   },
@@ -445,20 +417,16 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -473,8 +441,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 0,
   },
@@ -491,10 +459,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -509,18 +475,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -535,8 +499,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -551,18 +515,16 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -577,8 +539,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 5,
   },
@@ -590,10 +552,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -608,18 +568,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -634,8 +592,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -650,18 +608,16 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -676,8 +632,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 1,
   },
@@ -692,10 +648,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -710,18 +664,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -736,8 +688,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 5,
   },
@@ -747,10 +699,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -765,18 +715,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -791,8 +739,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 2,
   },
@@ -807,10 +755,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -825,18 +771,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -851,8 +795,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 5,
   },
@@ -862,10 +806,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -880,18 +822,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -906,8 +846,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 2,
   },
@@ -917,10 +857,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "bar",
-          },
           "type": 0,
+          "value": "bar",
         },
       ],
       "component": Object {
@@ -935,18 +873,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "bar",
-          },
           "type": 0,
+          "value": "bar",
         },
       ],
       "component": Object {
@@ -961,8 +897,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 5,
   },
@@ -972,10 +908,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "bar",
-          },
           "type": 0,
+          "value": "bar",
         },
       ],
       "component": Object {
@@ -990,18 +924,16 @@ Array [
         ],
         "template": "<i></i>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "bar",
-          },
           "type": 0,
+          "value": "bar",
         },
       ],
       "component": Object {
@@ -1016,8 +948,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 2,
   },
@@ -1032,10 +964,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -1050,8 +980,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
@@ -1060,10 +990,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -1078,18 +1006,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -1104,8 +1030,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -1120,8 +1046,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "operation": 4,
   },
@@ -1131,10 +1057,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "foo",
-          },
           "type": 0,
+          "value": "foo",
         },
       ],
       "component": Object {
@@ -1149,8 +1073,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "oldNode": Object {
       "children": Array [
@@ -1159,10 +1083,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -1177,18 +1099,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -1203,8 +1123,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -1219,8 +1139,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "operation": 2,
   },
@@ -1233,10 +1153,8 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
     "oldNode": Object {
       "children": Array [
@@ -1245,10 +1163,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -1263,18 +1179,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -1289,8 +1203,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -1305,8 +1219,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "operation": 4,
   },
@@ -1314,10 +1228,8 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
     "oldNode": Object {
       "children": Array [
@@ -1326,10 +1238,8 @@ Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -1344,18 +1254,16 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -1370,8 +1278,8 @@ Array [
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -1386,8 +1294,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
     "operation": 0,
   },
@@ -1400,18 +1308,14 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "baz",
-      },
       "type": 0,
+      "value": "baz",
     },
     "oldNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "bar",
-      },
       "type": 0,
+      "value": "bar",
     },
     "operation": 6,
   },
@@ -1422,10 +1326,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "baz",
-          },
           "type": 0,
+          "value": "baz",
         },
       ],
       "component": Object {
@@ -1440,8 +1342,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 8,
   },
@@ -1452,10 +1354,8 @@ Array [
         Object {
           "children": Array [],
           "component": null,
-          "data": Object {
-            "value": "qux",
-          },
           "type": 0,
+          "value": "qux",
         },
       ],
       "component": Object {
@@ -1470,8 +1370,8 @@ Array [
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
     "operation": 8,
   },
@@ -1484,18 +1384,14 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "qux",
-      },
       "type": 0,
+      "value": "qux",
     },
     "oldNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
     "operation": 6,
   },
@@ -1503,18 +1399,14 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "baz",
-      },
       "type": 0,
+      "value": "baz",
     },
     "oldNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "bar",
-      },
       "type": 0,
+      "value": "bar",
     },
     "operation": 6,
   },
@@ -1522,18 +1414,14 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "bar",
-      },
       "type": 0,
+      "value": "bar",
     },
     "oldNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "baz",
-      },
       "type": 0,
+      "value": "baz",
     },
     "operation": 6,
   },
@@ -1541,18 +1429,14 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
     "oldNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "qux",
-      },
       "type": 0,
+      "value": "qux",
     },
     "operation": 6,
   },
@@ -1565,18 +1449,14 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "baz",
-      },
       "type": 0,
+      "value": "baz",
     },
     "oldNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
     "operation": 6,
   },
@@ -1584,18 +1464,14 @@ Array [
     "newNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "qux",
-      },
       "type": 0,
+      "value": "qux",
     },
     "oldNode": Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "bar",
-      },
       "type": 0,
+      "value": "bar",
     },
     "operation": 6,
   },

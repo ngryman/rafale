@@ -10,6 +10,7 @@
     "createDocumentFragment",
     "createElement",
     "createTextNode",
+    "data",
     "firstChild",
     "firstElementChild",
     "forEach",
@@ -19,7 +20,6 @@
     "lastChild",
     "length",
     "name",
-    "nodeValue",
     "parentNode",
     "pop",
     "push",
@@ -28,7 +28,6 @@
     "removeChild",
     "replaceChild",
     "setAttribute",
-    "slice",
-    "value"
+    "slice"
   ]
 }

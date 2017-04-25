@@ -6,10 +6,8 @@ Object {
     Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": [Function],
-      },
       "type": 0,
+      "value": [Function],
     },
   ],
   "component": Object {
@@ -22,8 +20,8 @@ Object {
     ],
     "template": "<button onclick=\\"🦄\\"></button>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -36,8 +34,8 @@ Object {
         "slots": Array [],
         "template": "<b>foo</b>",
       },
-      "data": null,
       "type": 2,
+      "value": "",
     },
   ],
   "component": Object {
@@ -52,8 +50,8 @@ Object {
     ],
     "template": "<p></p>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -63,10 +61,8 @@ Object {
     Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
   ],
   "component": Object {
@@ -79,8 +75,8 @@ Object {
     ],
     "template": "<p id=\\"🦄\\"></p>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -90,10 +86,8 @@ Object {
     Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo bar",
-      },
       "type": 0,
+      "value": "foo bar",
     },
   ],
   "component": Object {
@@ -106,8 +100,8 @@ Object {
     ],
     "template": "<p id=\\"🦄\\"></p>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -117,10 +111,8 @@ Object {
     Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
   ],
   "component": Object {
@@ -135,8 +127,8 @@ Object {
     ],
     "template": "<b></b>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -150,10 +142,8 @@ Object {
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "foo",
-              },
               "type": 0,
+              "value": "foo",
             },
           ],
           "component": Object {
@@ -168,18 +158,16 @@ Object {
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
         Object {
           "children": Array [
             Object {
               "children": Array [],
               "component": null,
-              "data": Object {
-                "value": "bar",
-              },
               "type": 0,
+              "value": "bar",
             },
           ],
           "component": Object {
@@ -194,8 +182,8 @@ Object {
             ],
             "template": "<b></b>",
           },
-          "data": null,
           "type": 2,
+          "value": "",
         },
       ],
       "component": Object {
@@ -210,8 +198,8 @@ Object {
         ],
         "template": "<b></b>",
       },
-      "data": null,
       "type": 1,
+      "value": "",
     },
   ],
   "component": Object {
@@ -226,8 +214,8 @@ Object {
     ],
     "template": "<p></p>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -237,10 +225,8 @@ Object {
     Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
   ],
   "component": Object {
@@ -256,8 +242,8 @@ Object {
     "template": "<b>
   </b>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -267,10 +253,8 @@ Object {
     Object {
       "children": Array [],
       "component": null,
-      "data": Object {
-        "value": "foo",
-      },
       "type": 0,
+      "value": "foo",
     },
   ],
   "component": Object {
@@ -283,8 +267,8 @@ Object {
     ],
     "template": "<p id=\\"🦄\\" class=\\"bar\\"></p>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;
 
@@ -295,7 +279,7 @@ Object {
     "slots": Array [],
     "template": "<b>foo</b>",
   },
-  "data": null,
   "type": 2,
+  "value": "",
 }
 `;

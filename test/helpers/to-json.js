@@ -1,6 +1,6 @@
 export const vnodeToJSON = (vnode) => ({
   type: vnode.type,
-  data: vnode.data,
+  value: vnode.value,
   children: vnode.children.map(vnodeToJSON),
   component: vnode.component && {
     template: vnode.component.template.innerHTML,
