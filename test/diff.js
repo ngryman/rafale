@@ -71,7 +71,7 @@ test('reorder items of a sequence', macro,
   wrap(['foo', 'bar', 'baz', 'qux'].map(renderBold))
 )
 
-test('copy ref even if vnodes are the same', t => {
+test('copy dom node even if vnodes are the same', t => {
   const oldVTree = wrap(renderBold('foo'))
   const newVTree = wrap(renderBold('foo'))
   diff(newVTree, oldVTree)
