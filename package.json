@@ -1,5 +1,6 @@
 {
   "name": "rafale",
+  "main": "dist/rafale.dev.js",
   "scripts": {
     "lint": "eslint *.js {lib,test}/**/*.js",
     "pretest": "yarn lint",

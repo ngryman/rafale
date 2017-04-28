@@ -6,7 +6,7 @@ import cleanup from 'rollup-plugin-cleanup'
 export default {
   format: 'umd',
   entry: 'index.js',
-  dest: 'dist/rafale.js',
+  dest: 'dist/rafale.dev.js',
   moduleName: 'rafale',
   plugins: [
     resolve({
