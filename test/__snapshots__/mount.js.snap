@@ -8,7 +8,7 @@ Object {
       "attributes": Array [],
       "children": Array [],
       "nodeName": "BUTTON",
-      "onclick": [Function],
+      "onclick": undefined,
       "textContent": "",
     },
   ],
