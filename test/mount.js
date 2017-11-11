@@ -1,6 +1,6 @@
 import test from 'ava'
 import { nodeToJSON } from './helpers/to-json'
-import { html, mount } from '../'
+import { html, mount } from '../index'
 
 function macro(t, vtree) {
   mount(vtree, t.context)

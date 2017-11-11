@@ -1,6 +1,6 @@
 import test from 'ava'
 import { patchesToJSON } from './helpers/to-json'
-import { html, diff } from '../'
+import { html, diff } from '../index'
 
 function macro(t, newVTree, oldVTree) {
   t.snapshot(patchesToJSON(diff(newVTree, oldVTree)))

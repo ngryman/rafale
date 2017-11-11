@@ -1,5 +1,5 @@
 import test from 'ava'
-import { html, diff, recycle } from '../'
+import { html, diff, recycle } from '../index'
 
 test('recycle a vnode', t => {
   const oldVNode = html`<b>foo</b>`

@@ -1,6 +1,6 @@
 import test from 'ava'
 import { vnodeToJSON } from './helpers/to-json'
-import { html } from '../'
+import { html } from '../index'
 
 function macro(t, vtree) {
   t.snapshot(vnodeToJSON(vtree))
