@@ -13,12 +13,12 @@ Object {
   "component": Object {
     "slots": Array [
       Slot {
-        "name": "onclick",
+        "name": "click",
         "path": Array [],
         "type": 1,
       },
     ],
-    "template": "<button onclick=\\"🦄\\"></button>",
+    "template": "<button></button>",
   },
   "type": 2,
   "value": null,
@@ -278,6 +278,31 @@ Object {
   "component": Object {
     "slots": Array [],
     "template": "<b>foo</b>",
+  },
+  "type": 2,
+  "value": null,
+}
+`;
+
+exports[`remove function attributes but keep others 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [],
+      "component": null,
+      "type": 0,
+      "value": [Function],
+    },
+  ],
+  "component": Object {
+    "slots": Array [
+      Slot {
+        "name": "click",
+        "path": Array [],
+        "type": 1,
+      },
+    ],
+    "template": "<button class=\\"foo\\"></button>",
   },
   "type": 2,
   "value": null,

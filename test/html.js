@@ -2,6 +2,8 @@ import test from 'ava'
 import { vnodeToJSON } from './helpers/to-json'
 import { html } from '../index'
 
+const noop = () => {}
+
 function macro(t, vtree) {
   t.snapshot(vnodeToJSON(vtree))
 }
@@ -41,11 +43,15 @@ test('create a component with mixed attributes', macro,
 )
 
 test('create a component with a function attribute', macro,
-  html`<button onclick=${_ => {}}></button>`
+  html`<button onclick=${noop}></button>`
 )
 
 test('create a component with dummy text nodes', macro,
   html`<b>
     ${'foo'}
   </b>`
+)
+
+test('remove function attributes but keep others', macro,
+  html`<button onclick=${noop} class="foo"></button>`
 )
